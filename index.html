@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- navigation -->
+    <nav class="navbar navbar-expand-lg bg-white pb-0">
+        <div class="d-lg-block container-fluid px-0">
+            <div class="upper-nav d-flex px-4 py-3">
+                <a class="navbar-brand" href="#" style="width: 125px;"><img src="images/Monster_Jobs_logo_logotype.png"
+                        alt="" class="img-fluid"></a>
+                <form class="ms-auto d-none d-lg-block" role="search" id="navbarSupportedContent">
+                    <button class="btn btn-danger" type="submit">Sign up</button>
+                    <button class="btn btn-outline-light text-danger border border-2" type="submit">Log in</button>
+                </form>
+            </div>
+            <button class="navbar-toggler mx-4 my-3" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100 bg-light py-lg-2 mt-2" id="navbarSupportedContent">
+                <form class="d-block d-lg-none p-3 text-center" role="search" id="navbarSupportedContent">
+                    <button class="btn btn-danger" type="submit">Sign up</button>
+                    <button class="btn btn-outline-light text-danger border border-2" type="submit">Log in</button>
+                </form>
+                <ul class="navbar-nav mb-lg-0 fs-6 gap-0 gap-lg-5 w-100 px-lg-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-2" href="#">Find Jobs</a>
+                        <hr class="d-lg-none m-1 w-100 border border-dark">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-2" href="#">Salary Tools</a>
+                        <hr class="d-lg-none m-1 w-100 border border-dark">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-2" href="#">Career Advice</a>
+                        <hr class="d-lg-none m-1 w-100 border border-dark">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-2" href="#">Resume Help</a>
+                        <hr class="d-lg-none m-1 w-100 border border-dark">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-2" href="#">Upload Resume</a>
+                        <hr class="d-lg-none m-1 w-100 border border-dark">
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark ps-2" href="#">Find Jobs</a>
+                        <hr class="d-lg-none m-1 w-100 border border-dark">
+                    </li>
+                    <li class="nav-item ms-lg-auto">
+                        <a class="nav-link text-dark ps-2 pb-3" href="#">Employers / Post Job <i
+                                class="d-none d-lg-inline-block ps-1 text-secondary fa fa-arrow-right"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- header -->
+    <header class="bg-primary v-100">
+        <div class="container py-5">
+            <div class="top-header my-5">
+                <h1 class="mb-4 text-light fw-bold text-center text-lg-start">Find the <span
+                        class="text-black text-decoration-underline">right</span> fit.</h1>
+                <form>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control py-2 py-md-3 py-lg-4 fs-5 text-black-50"
+                            placeholder="Search Job Titles or Keywords" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <input type="text" class="form-control d-none d-lg-block fs-5 text-black-50"
+                            placeholder="Enter Location or 'remote'" aria-label="Recipient's username"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-danger" type="button" id="button-addon2"><i
+                                class="fa px-3 fa-light fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+                <p class="text-center text-white">
+                    <svg aria-label="" style="max-width: 20px;"
+                        class="upload-ctastyle__IconMegaphone-sc-7l8m0e-1 cCcvzV" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg" fill="black">
+                        <path
+                            d="M21.573 3.1809C21.841 3.3679 22 3.6739 22 3.9999V19.9999C22 20.3259 21.841 20.6319 21.573 20.8189C21.403 20.9379 21.202 20.9999 21 20.9999C20.885 20.9999 20.77 20.9799 20.658 20.9399L9.823 16.9999H9V20.9999C9 21.5519 8.553 21.9999 8 21.9999H5C4.447 21.9999 4 21.5519 4 20.9999V16.9999H3C2.447 16.9999 2 16.5519 2 15.9999V7.9999C2 7.4469 2.447 6.9999 3 6.9999H9.823L20.658 3.0599C20.965 2.9489 21.307 2.9929 21.573 3.1809ZM20 18.5719V5.4269L11 8.6999V15.2999L20 18.5719ZM4 14.9999H9V8.9999H4V14.9999ZM6 19.9999H7V16.9999H6V19.9999Z">
+                        </path>
+                    </svg>
+                    <i class="fa-duotone fa-megaphone"></i>
+                    <i class="fa fa-regular fa-megaphone"></i>
+                    <a href="" class="link-light">Upload Your Resume</a>
+                    - Get noticed by top employers!
+                </p>
+            </div>
+            <div class="bottom-header text-white mt-5 d-none d-lg-block">
+                <p class="px-3 m-1">Popular Searches</p>
+                <nav class="navbar navbar-expand">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav gap-3 d-flex flex-wrap">
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Work from home
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Part-Time
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Administration
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Finance
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Retail
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    IT
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Engineering
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Sales
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Manufacturing
+                                </a>
+                            </li>
+                            <li class="nav-item btn btn-dark rounded px-2 py-1 fw-bold">
+                                <a class="nav-link text-white" href="#">
+                                    <i class="fa fa-light fa-magnifying-glass fa-sm pe-2"></i>
+                                    Delivery Driver
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- main -->
+    <main>
+        <!-- hero section -->
+        <section class="hero bg-info py-5">
+            <div class="mx-3 py-3">
+                <div class="row">
+                    <div class="left-hero col-12 col-md-6 col-lg-7 d-none d-md-block">
+                        <div class="left-hero-bg d-flex justify-content-center">
+                            <img src="images/grad-image (1).jpg" alt="" class="w-100">
+                        </div>
+                    </div>
+                    <div class="right-hero col-12 col-md-6 col-lg-5 py-lg-5">
+                        <h4 class="mb-4 fw-bold pt-lg-4">Just graduating? We can help.</h4>
+                        <div class="d-grid gap-2">
+                            <a class="btn btn-dark d-flex" type="button">
+                                <span class="my-auto"> Visit the New Grad hub</span>
+                                <i
+                                    class="fa-solid fa-arrow-right  ms-auto mt-1 p-3 border border-primary rounded-circle bg-danger"></i>
+                            </a>
+                            <a class="btn btn-dark d-flex" type="button">
+                                <span class="my-auto"> Visit the New Grad hub</span>
+                                <i
+                                    class="fa-solid fa-arrow-right  ms-auto mt-1 p-3 border border-primary rounded-circle bg-danger"></i>
+                            </a>
+                            <a class="btn btn-dark d-flex" type="button">
+                                <span class="my-auto"> Visit the New Grad hub</span>
+                                <i
+                                    class="fa-solid fa-arrow-right  ms-auto mt-1 p-3 border border-primary rounded-circle bg-danger"></i>
+                            </a>
+                            <a class="btn btn-dark d-flex" type="button">
+                                <span class="my-auto"> Visit the New Grad hub</span>
+                                <i
+                                    class="fa-solid fa-arrow-right  ms-auto mt-1 p-3 border border-primary rounded-circle bg-danger"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- career section -->
+        <section class="career my-5">
+            <div class="container">
+                <div class="career-heading text-center">
+                    <h5 class="fw-bold">Top Career Advice</h5>
+                    <p>BROWSE ADVICE <i class="fa-solid fa-arrow-right fa-lg ps-2 text-primary"></i></p>
+                </div>
+                <div class="career-cards mt-4 d-flex flex-md-wrap justify-content-md-around gap-4">
+                    <a class="career-card nav-link rounded shadow py-2 px-3 my-3 my-md-0" href="#">
+                        <img src="images/Career-Advice-Position1@1x-01.jpg" alt="" class="img-fluid rounded w-100">
+                        <h6 class="mt-3 bg-primary text-white lh-base d-inline-block px-2 rounded rounded-1"
+                            style="font-size: 12px;">ASSESSMENTS</h6>
+                        <p>11 awesome free career self assessments </p>
+                    </a>
+                    <a class="career-card nav-link rounded shadow py-2 px-3 my-3 my-md-0" href="#">
+                        <img src="images/Career-Advice-Position2@1x-01.jpg" alt="" class="img-fluid rounded w-100">
+                        <h6 class="mt-3 bg-danger text-white lh-base d-inline-block px-2 rounded rounded-1"
+                            style="font-size: 12px;">JOBS</h6>
+                        <p>How to start looking for a job</p>
+                    </a>
+                    <a class="career-card nav-link rounded shadow py-2 px-3 my-3 my-md-0" href="#">
+                        <img src="images/Career-Advice-Position3@1x-01.jpg" alt="" class="img-fluid rounded w-100">
+                        <h6 class="mt-3 bg-success text-white lh-base d-inline-block px-2 rounded rounded-1"
+                            style="font-size: 12px;">RESUME</h6>
+                        <p>Resume samples</p>
+                    </a>
+                    <a class="career-card nav-link rounded shadow py-2 px-3 my-3 my-md-0" href="#">
+                        <img src="images/Career-Advice-Position5@1x-01.jpg" alt="" class="img-fluid rounded w-100">
+                        <h6 class="mt-3 bg-warning lh-base d-inline-block px-2 rounded rounded-1"
+                            style="font-size: 12px;">INTERVIEW</h6>
+                        <p>100 top interview questions - be prepared</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ad section -->
+        <section class="ad my-5">
+            <div class="mx-md-5 py-5">
+                <div class="row g-0">
+                    <div
+                        class="col-12 col-md-6 bg-primary py-5 px-3  rounded-start rounded-sm-remove text-center text-md-start">
+                        <div class="ad-headings d-flex flex-column h-100 justify-content-center">
+                            <h4 class="text-white fw-bold">Get the app.</h4>
+                            <p class="text-white mb-4">Get the power of Monster on-the-go, featuring one-touch apply.
+                            </p>
+                            <div class="ad-store d-flex flex-column flex-md-row gap-4 gap-md-2 w-100">
+                                <img src="images/app-store.svg" alt="" class="img-fluid">
+                                <img src="images/play-store.svg" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <img src="images/monster-app.png" alt=""
+                            class="img-fluid rounded-end rounded-sm-remove w-100 h-100">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- popular section -->
+        <section class="popular my-5">
+            <div class="container text-center">
+                <h5 class="text-info fw-bold pb-3">Popular in USA</h5>
+                <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header d-flex justify-content-center" id="flush-headingOne">
+                            <button class="accordion-button collapsed w-resp" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                aria-controls="flush-collapseOne">
+                                Popular Job Categories
+                            </button>
+                        </h2>
+                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header d-flex justify-content-center" id="flush-headingTwo">
+                            <button class="accordion-button collapsed w-resp" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
+                                aria-controls="flush-collapseTwo">
+                                Popular Job Titles
+                            </button>
+                        </h2>
+                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Link</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header d-flex justify-content-center" id="flush-headingThree">
+                                <button class="accordion-button collapsed w-resp" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                    aria-expanded="false" aria-controls="flush-collapseThree">
+                                    Popular Job Locations
+                                </button>
+                            </h2>
+                            <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                <div class="accordion-body">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Link</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </section>
+
+    </main>
+    <!-- footer sections -->
+    <footer class="mt-5 py-5 bg-primary">
+        <div class="container-md pt-5">
+            <div class="footer-uls">
+                <div class="row">
+                    <div class="col-12 col-md-4 text-center text-md-start">
+                        <nav class="navbar navbar-expand-md">
+                            <div class="container-fluid d-block">
+                                <a class="navbar-brand fw-bold fs-6 text-warning" href="#">For Job Seekers</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#uls-1" aria-controls="uls-1"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa-regular fa-plus fa-sm text-warning fw-bold"></i>
+                                </button>
+                                <div class="collapse navbar-collapse mt-2" id="uls-1">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Browse Jobs</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Salary Tools</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Career Advice</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Company Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Student Career Center</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Resume Writing Services </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Jobs for Ukrainians</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="border border-1 my-4  d-md-none">
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-start">
+                        <nav class="navbar navbar-expand-md">
+                            <div class="container-fluid d-block">
+                                <a class="navbar-brand fw-bold fs-6 text-warning" href="#">For Employers</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#uls-2" aria-controls="uls-2"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa-regular fa-plus fa-sm text-warning fw-bold"></i>
+                                </button>
+                                <div class="collapse navbar-collapse mt-2" id="uls-2">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Products</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Solutions</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Pricing </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Resources</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Help</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="border border-1 my-4  d-md-none">
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="col-12 col-md-4 text-center text-md-start">
+                        <nav class="navbar navbar-expand-md">
+                            <div class="container-fluid d-block">
+                                <a class="navbar-brand fw-bold fs-6 text-warning" href="#">Helpful Resources</a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#uls-3" aria-controls="uls-3"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa-regular fa-plus fa-sm text-warning fw-bold"></i>
+                                </button>
+                                <div class="collapse navbar-collapse mt-2" id="uls-3">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 flex-column">
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">About Monster</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Work for Monster</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Terms of Use</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Privacy Center</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Security Center</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Accessibility Center</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">AdChoices</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white" aria-current="page" href="#">Your Privacy Choices</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <hr class="border border-1 my-4  d-md-none">
+                            </div>
+                        </nav>
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="footer-medias my-5 text-white">
+                <div class="row pt-5 gap-5 gap-md-0 text-center text-md-start">
+                    <div class="col-12 col-md-4">
+                        <h6>Find us on social media:</h6>
+                        <div class="social-logos d-flex flex-wrap mt-4 gap-3 justify-content-center justify-content-md-start">
+                            <a href="#" class="nav-link"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                            <a href="#" class="nav-link"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                            <a href="#" class="nav-link"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                            <a href="#" class="nav-link"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                            <a href="#" class="nav-link"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+                            <a href="#" class="nav-link"><i class="fa-brands fa-tiktok fa-xl"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <h6>Get the Monster App</h6>
+                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="#"><img src="images/app-store.svg" alt="" class="img-fluid"></a>
+                            <a href="#"><img src="images/play-store.svg" alt="" class="img-fluid"></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                </div>
+                <div class="row mt-md-5 gap-5 gap-md-0 text-center text-md-start">
+                    <div class="col-12 col-md-4 pt-md-5">
+                        <h6>&copy; 2023 Monster Worldwide</h6>
+                        <a class="nav-link pt-2" href="#">Looking for Monster Cable?</a>
+                    </div>
+                    <div class="col-12 col-md-4 pt-md-5">
+                        <a href="#">
+                            <img src="//privacy-policy.truste.com/privacy-seal/seal?rid=232f8c51-711d-4fbc-afed-b3b87885979a" height="40" class="img-fluid">
+                            </a>
+                    </div>
+                    <div class="col-12 col-md-4"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/adb35ed7eb.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

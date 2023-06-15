@@ -1,0 +1,30 @@
+/* utility */
+.w-resp{
+    min-width: 18% !important;
+    max-width: 25% !important;
+}
+
+
+/* hero section */
+.left-hero-bg img{
+    border-end-end-radius: 50px; 
+    border-start-end-radius: 50px;
+    border-inline-end: 10px solid white; 
+    border-end-start-radius: 50px;
+    border-block-end: 10px solid white; 
+}
+
+/* career section */
+.career-card{
+    width: 260px;
+    transition: 0.3s ease-in-out;
+}
+.career-card:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+/* ad section */
+.ad-store img{
+    height: 64px;
+    cursor: pointer;
+}

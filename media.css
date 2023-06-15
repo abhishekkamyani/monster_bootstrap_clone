@@ -1,0 +1,32 @@
+/* tablet view */
+@media (width < 992px) {
+    /* ad section */
+    .ad-store img{
+        height: 45px;
+    }
+    /* utility */
+    .w-resp{
+        max-width: 38% !important;
+    }
+}
+
+/* mobile view */
+@media (width < 768px) {
+    /* career section */
+    .career-card{
+        min-width: 260px;
+    }
+    .career-cards {
+        overflow:auto;
+    }
+    
+    /* utilities */
+    .rounded-sm-remove{
+        border-radius: 0 !important;
+        border-top-left-radius: 0px !important;
+        border-bottom-left-radius: 0px !important;
+    }
+    .w-resp{
+        max-width: 56% !important;
+    }
+}
